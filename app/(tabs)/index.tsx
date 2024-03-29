@@ -80,8 +80,8 @@ export default function TabOneScreen() {
           </Text>
         </HStack>
         <Box>
-          <Button onPress={toggleRun} action={displayModeAction(mode)}>
-            <ButtonText>Button</ButtonText>
+          <Button w="$40" onPress={toggleRun} action={displayModeAction(mode)}>
+            <ButtonText>{isRunning ? "stop" : "start"}</ButtonText>
           </Button>
         </Box>
       </VStack>
